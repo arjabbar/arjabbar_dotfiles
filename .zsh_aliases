@@ -1,0 +1,15 @@
+alias rzsh='source ~/.zshrc'
+alias ls='ls -Al --color=always'
+alias update='sudo apt-get update'
+alias upgrade='sudo apt-get upgrade -y'
+alias install='sudo apt-get install -y'
+alias sl='subl .'
+
+alias make_go_path='export GOPATH=`pwd`'
+
+alias restart_jxbrowser_debugger='lsof -i :9222 | grep jxbrowser | awk "{print $2}" | ruby -e "puts STDIN.readlines.uniq" | xargs sudo kill'
+alias my_local_ip="ifconfig | grep 192 | cut -f2 -d':' | cut -f1 -d' '"
+
+alias tmux='tmux -2'
+
+

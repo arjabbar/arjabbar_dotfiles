@@ -1,0 +1,11 @@
+function chpwd() {
+	ls
+}
+
+function search() {
+	aptitude search $@ | grep -i "$@"		
+}
+
+function use_go() {
+	export GOROOT="/usr/local/go$1"
+}
